@@ -12,6 +12,4 @@ The whole code is commented to help beginners.
 -Inject DLL using LoadLibrary
 
 <h2>Screenshots:</h2>
-![image](https://postimg.cc/XpY7Xwnp)
-![image](https://postimg.cc/FdX0QP5f)
-![image](https://postimg.cc/nXsm98nj)
+
