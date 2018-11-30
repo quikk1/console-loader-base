@@ -1,7 +1,7 @@
 <?php
-$link = mysqli_connect(''); //host, user, pass
+$link = mysqli_connect('host';'user';'password'); //host, user, pass
 
-$database = mysqli_select_db($link, "db"); //Set here your db name
+$database = mysqli_select_db($link, "your_db"); //Set here your db name
 
 $user = $_GET['username'];
 $password = $_GET['password'];
