@@ -1,7 +1,7 @@
 <?php
-$link = mysqli_connect('sv6.byethost6.org', 'reptilec_admin', 'dTK3QTshn0clDiLB72'); //host, user, pass
+$link = mysqli_connect(''); //host, user, pass
 
-$database = mysqli_select_db($link, "reptilec_db"); //Set here your db name
+$database = mysqli_select_db($link, ""); //Set here your db name
 
 $user = $_GET['username'];
 $password = $_GET['password'];
