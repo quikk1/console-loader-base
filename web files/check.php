@@ -1,10 +1,9 @@
 <?php
 $link = mysqli_connect('host', 'user', 'pass'); //host, user, pass
 
-$database = mysqli_select_db($link, "reptilec_db"); //Set here your db name
+$database = mysqli_select_db($link, "db_name"); //Set here your db name
 
 $user = $_GET['username'];
-$password = $_GET['password'];
 $hwid = $_GET['hwid'];
 
 $tables = "user"; //Set here ur user table
@@ -29,7 +28,7 @@ if ($result->num_rows > 0) {
         exit();
         }
         
-        if($sql_pass != $row['password'])
+        if($sql_pass !== $row['password'])
         {
             echo "0"; // pass is wrong
         }
@@ -40,7 +39,7 @@ if ($result->num_rows > 0) {
         
         if (strlen($row['hwid']) > 1)
         {
-            if ($hwid != $row['hwid'])
+            if ($hwid !== $row['hwid'])
             {
                 echo "2"; // hwid is wrong
             }
